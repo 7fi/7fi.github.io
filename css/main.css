@@ -17,6 +17,9 @@ body, html{
     font-size: 800px;
     margin-top: 1rem;
 }
+a:visited{
+    color:white;
+}
 
 @keyframes e {
     0% {
