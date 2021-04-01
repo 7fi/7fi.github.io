@@ -5,7 +5,8 @@ const music = () => {
     let backAudio = document.createElement('audio');
     backAudio.autoplay = true;
     backAudio.setAttribute('src', 'https://krunker.io/sound/ambient_9.mp3');
-    backAudio.play()
+    audio.volume = 50;
+    backAudio.play();
     backAudio.addEventListener('ended', function() {
         this.currentTime = 0;
         this.play();
@@ -13,7 +14,3 @@ const music = () => {
   }
 
 }
-let volume = document.querySelector("#volume-control");
-volume.addEventListener("change", function(e) {
-audio.volume = e.currentTarget.value / 100;
-})
