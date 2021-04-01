@@ -5,15 +5,18 @@
 
 body, html{
     font-family: custom;
-    display: grid;
-    place-items: center;
-    user-select: none;
+}
+#header{
+    position: absolute;
+    left:44%;
 }
 
 #e {
     color: white;
     font-size: 800px;
     margin-top: 1rem;
+    left:40%;
+    position: absolute;
 }
 a{
     text-decoration: none;
@@ -21,4 +24,12 @@ a{
 a:visited{
     text-decoration: none;
     color:#fff;
+}
+html{
+    animation:bg 2s infinite;
+}
+@keyframes bg{
+    0%{background-color: red;}
+    50%{background-color: darkred;}
+    100%{background-color: red;}
 }
