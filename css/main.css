@@ -2,9 +2,23 @@
     font-family: custom;
     src: url(https://scuffedclient.com/fonts/devCss.ttf)
 }
-*{
-    font-family: serif;
+
+body, html{
+    font-family: custom;
+    display: grid;
+    place-items: center;
+    user-select: none;
 }
-h1 {
-    color:#333333;
+
+#e {
+    color: white;
+    font-size: 800px;
+    margin-top: 1rem;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color:#fff;
 }
