@@ -9,13 +9,13 @@ body, html{
 #header{
     position: absolute;
     left:44%;
+    display: none;
 }
 
 #e {
     color: white;
-    font-size: 800px;
-    margin-top: 1rem;
     left:40%;
+    top:20%;
     position: absolute;
 }
 a{
@@ -29,7 +29,7 @@ html{
     animation:bg 2s infinite;
 }
 @keyframes bg{
-    0%{background-color: red;}
-    50%{background-color: darkred;}
-    100%{background-color: red;}
+    0%{background-color:blue;}
+    50%{background-color: darkolivegreen;}
+    100%{background-color: blue;}
 }

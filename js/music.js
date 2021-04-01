@@ -12,5 +12,4 @@ const music = () => {
         this.play();
     }, false);
   }
-
 }
