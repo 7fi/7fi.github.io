@@ -11,4 +11,9 @@ const music = () => {
         this.play();
     }, false);
   }
+
 }
+let volume = document.querySelector("#volume-control");
+volume.addEventListener("change", function(e) {
+audio.volume = e.currentTarget.value / 100;
+})
