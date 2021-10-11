@@ -1,35 +1,39 @@
-@font-face {
-    font-family: custom;
-    src: url(https://scuffedclient.com/fonts/devCss.ttf)
-}
-
-body, html{
+* {
     font-family: custom;
 }
-#header{
-    position: absolute;
-    left:44%;
-    display: none;
+
+a {
+    text-decoration: none;
 }
 
-#e {
-    color: white;
-    left:40%;
-    top:20%;
-    position: absolute;
-}
-a{
-    text-decoration: none;
-}
-a:visited{
-    text-decoration: none;
+a:visited {
     color:#fff;
 }
-html{
-    animation:bg 2s infinite;
+
+html {
+	animation-name: bg;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-duration: 2s;
 }
-@keyframes bg{
+
+.e {
+	display: grid;
+	place-items: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+@font-face {
+    font-family: custom;
+    src: url(../assets/fonts/devCss.ttf);
+}
+
+@keyframes bg {
     0%{background-color:blue;}
-    50%{background-color: darkolivegreen;}
-    100%{background-color: blue;}
+    100%{background-color: darkolivegreen;}
 }
